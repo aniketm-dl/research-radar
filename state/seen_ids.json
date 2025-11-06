@@ -1,4 +1,37 @@
 {
-  "papers": {},
-  "last_run": null
+  "papers": {
+    "10.1016/j.ijengsci.2025.104407": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Performance analysis of an aerostatic thrust bearing lubricated by supercritical CO2 utilizing Elrod-Ng turbulence model"
+    },
+    "10.1016/j.epsr.2025.112397": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Sensibility analysis of the virtual synchronous generator using a small-Signal model"
+    },
+    "10.1016/j.jweia.2025.106263": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "A physics-informed deep learning framework for the tropical cyclones decay model"
+    },
+    "10.1016/j.jbusres.2025.115768": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "The mindful marketplace: ideological repackaging in influencer marketing"
+    },
+    "10.1016/j.ridd.2025.105157": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Early predictors of pragmatic language competence: A longitudinal study"
+    },
+    "10.1016/j.ajpe.2025.101663": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Learning Outcomes from Project Design: A Model for Integration in Pharmacy Education"
+    },
+    "10.1016/j.ajpe.2025.101782": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Strategic Curriculum Transformation in Pharmacy Education: A Model for Planning, Implementation, and Project Management"
+    },
+    "10.1016/j.ajpe.2025.101736": {
+      "sent_date": "2025-11-06T22:48:02.577676",
+      "title": "Advancing Student Success: Implementation of a Proactive Support Model at a College of Pharmacy"
+    }
+  },
+  "last_run": "2025-11-06T22:48:02.577676"
 }
