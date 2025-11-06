@@ -63,7 +63,31 @@
     "10.1177/27723577251388360": {
       "sent_date": "2025-11-06T22:50:26.769764",
       "title": "Digital governance in Latin America: A\u00a0comprehensive analysis and future perspectives"
+    },
+    "2511.00993": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "Aligning LLM agents with human learning and adjustment behavior: a dual   agent approach"
+    },
+    "10.31234/osf.io/5nvps_v1": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "What Moves Parents to Recommend Digital Mental Health Tools for Youth? Behavioral Insights and Implications"
+    },
+    "10.1016/j.procs.2025.09.650": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "Towards Using Prompt Engineering in Large Language Models to Assist Decision Making"
+    },
+    "10.1016/j.procs.2025.09.520": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "The use of the Preference Vector Method \u2013 Vector Space of Increments (PVM\u2013VSI) in supporting the consumer decision related to the purchase of an electric car from the mini\u2013segment"
+    },
+    "10.1016/j.procs.2025.09.322": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "Usability and Frustration in Using Adaptive Functions for Decision Making: A User Study"
+    },
+    "2510.27630": {
+      "sent_date": "2025-11-06T23:10:08.897963",
+      "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout   for Long-Horizon Task Training"
     }
   },
-  "last_run": "2025-11-06T22:50:26.769764"
+  "last_run": "2025-11-06T23:10:08.897963"
 }
