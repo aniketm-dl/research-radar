@@ -134,7 +134,7 @@ def main():
     print(f"\nSummarizing {len(papers_to_summarize)} papers...")
     summarizer_config = config.get('summarization', {})
     summarizer = Summarizer(
-        model=summarizer_config.get('model', 'gemini-1.5-flash'),
+        model=summarizer_config.get('model', 'gemini-1.5-flash-latest'),
         temperature=summarizer_config.get('temperature', 0.2)
     )
 
