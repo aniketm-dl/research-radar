@@ -54,22 +54,27 @@ RESEARCH FOCUS:
 TOPICS TO EXPLICITLY EXCLUDE:
 {', '.join(exclude_topics) if exclude_topics else 'None'}
 
-Generate {num_queries} highly specific search queries for arXiv and academic databases. Each query should:
-1. Use precise terminology from the research focus
-2. Combine multiple relevant terms with AND/OR operators
-3. Use quoted phrases for exact matches when needed
-4. Explicitly exclude irrelevant topics using NOT or AND NOT operators
-5. Focus on the APPLICATION DOMAIN (consumer research, marketing, behavioral modeling)
-6. Avoid generic terms that could match unrelated papers
+Generate {num_queries} search queries for arXiv and academic databases. Each query should:
+1. Be FOCUSED but not overly restrictive - aim for 2-3 core concepts with OR alternatives
+2. Use quoted phrases for multi-word concepts (e.g., "digital twin", "synthetic users")
+3. Combine concepts with AND, use OR for synonyms/alternatives
+4. Use NOT to exclude major irrelevant topics (manufacturing, IoT, infrastructure)
+5. Keep queries SIMPLE - too many AND conditions will find nothing
+
+CRITICAL: The queries must be balanced - specific enough to filter out irrelevant papers, but broad enough to actually find papers.
 
 Format: Return ONLY the queries, one per line, with no numbering or explanation.
 Use arXiv search syntax: quotes for phrases, AND, OR, NOT for operators.
 
-Example format:
-"digital twin" AND (consumer OR customer) AND (behavior OR preference) NOT (manufacturing OR IoT)
-"synthetic users" AND "language model" AND (survey OR preference)
+Example GOOD queries (focused but findable):
+"digital twin" AND consumer NOT (manufacturing OR IoT)
+"synthetic users" AND (behavior OR preference)
+"LLM agent" AND (consumer OR customer OR marketing)
 
-Generate {num_queries} queries now:"""
+Example BAD queries (too restrictive, will find nothing):
+"digital twin" AND consumer AND "behavioral model" AND AI AND marketing NOT manufacturing
+
+Generate {num_queries} balanced queries now:"""
 
         try:
             response = self.model.generate_content(
