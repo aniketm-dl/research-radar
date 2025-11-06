@@ -4,6 +4,7 @@ Scores papers based on alignment with Darpan Labs' business focus.
 """
 
 import os
+import time
 from typing import Dict, List, Tuple
 import google.generativeai as genai
 
@@ -26,6 +27,17 @@ class RelevanceFilter:
         genai.configure(api_key=api_key)
         self.model = genai.GenerativeModel(model)
         self.temperature = temperature
+        self.last_request_time = 0
+        self.min_request_interval = 7  # 7 seconds between requests to stay under 10/min
+
+    def _rate_limit(self):
+        """Implement rate limiting to respect API quotas."""
+        current_time = time.time()
+        time_since_last = current_time - self.last_request_time
+        if time_since_last < self.min_request_interval:
+            sleep_time = self.min_request_interval - time_since_last
+            time.sleep(sleep_time)
+        self.last_request_time = time.time()
 
     def score_paper(self, paper: Dict, business_context: str) -> Tuple[float, str]:
         """
@@ -40,6 +52,9 @@ class RelevanceFilter:
             relevance_score: 0-10 score (0 = completely irrelevant, 10 = highly relevant)
             reasoning: Brief explanation of the score
         """
+        # Apply rate limiting
+        self._rate_limit()
+
         title = paper.get('title', 'Unknown')
         abstract = paper.get('abstract', 'No abstract available')
 
