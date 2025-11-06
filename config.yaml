@@ -15,6 +15,35 @@ search:
   # Use LLM to generate search queries (recommended)
   use_llm_query_generation: true
 
+  # Use LLM to filter papers by relevance (highly recommended)
+  use_relevance_filtering: true
+  min_relevance_score: 6.0  # Papers must score 6/10 or higher
+
+  # Darpan Labs business context for relevance filtering
+  business_context: |
+    Darpan Labs builds AI-powered digital twins of consumers for market research and customer understanding.
+
+    Our core technology:
+    - Creating synthetic personas/users that mimic real consumer behavior
+    - Using LLM agents to simulate customer decision-making and preferences
+    - Enabling companies to test products, messaging, and strategies with AI consumer twins
+    - Providing behavioral insights without needing large-scale human surveys
+
+    We focus on:
+    - Consumer behavior modeling and prediction
+    - Synthetic data generation for market research
+    - LLM-based agents for understanding customer preferences
+    - Survey augmentation and preference elicitation
+    - Behavioral science applications in marketing
+    - Agent-based modeling of consumer decision-making
+
+    We are NOT interested in:
+    - Manufacturing or industrial applications
+    - IoT devices and smart infrastructure
+    - Supply chain or logistics optimization
+    - Physical system modeling (buildings, vehicles, etc.)
+    - Healthcare digital twins (unless behavioral/consumer focused)
+
   # Research focus for LLM query generation
   research_focus: |
     Digital twins and synthetic users for consumer and customer research.

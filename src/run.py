@@ -26,6 +26,7 @@ from src.summarizer import Summarizer
 from src.emailer import EmailSender
 from src.util_state import StateManager
 from src.query_generator import QueryGenerator
+from src.relevance_filter import RelevanceFilter
 
 
 def load_config(config_file: str = "config.yaml") -> Dict:
@@ -148,13 +149,41 @@ def main():
         print("No new papers to send. Exiting.")
         return
 
+    # Apply relevance filtering if enabled
+    search_config = config.get('search', {})
+    use_relevance_filter = search_config.get('use_relevance_filtering', False)
+
+    if use_relevance_filter:
+        business_context = search_config.get('business_context', '')
+        min_score = search_config.get('min_relevance_score', 6.0)
+
+        try:
+            relevance_filter = RelevanceFilter()
+            relevant_papers = relevance_filter.filter_papers(
+                papers=unseen_papers,
+                business_context=business_context,
+                min_score=min_score
+            )
+
+            if not relevant_papers:
+                print(f"\nNo papers scored >= {min_score}/10. Exiting.")
+                return
+
+            papers_to_process = relevant_papers
+        except Exception as e:
+            print(f"Error in relevance filtering: {e}")
+            print("Proceeding without relevance filtering")
+            papers_to_process = unseen_papers
+    else:
+        papers_to_process = unseen_papers
+
     # Limit to max summaries
     max_summaries = config.get('summarization', {}).get('max_summaries', 8)
-    if len(unseen_papers) > max_summaries:
-        print(f"Limiting to {max_summaries} papers")
-        papers_to_summarize = unseen_papers[:max_summaries]
+    if len(papers_to_process) > max_summaries:
+        print(f"\nLimiting to {max_summaries} papers")
+        papers_to_summarize = papers_to_process[:max_summaries]
     else:
-        papers_to_summarize = unseen_papers
+        papers_to_summarize = papers_to_process
 
     # Summarize papers
     print(f"\nSummarizing {len(papers_to_summarize)} papers...")

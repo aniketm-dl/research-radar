@@ -49,3 +49,4 @@ htmlcov/
 # Local development
 local_config.yaml
 test_email.html
+test_gemini.py
