@@ -19,6 +19,10 @@ concurrency:
   group: newsletter
   cancel-in-progress: false
 
+# Grant write permissions for pushing state file updates
+permissions:
+  contents: write
+
 jobs:
   generate-and-send:
     name: Generate and Send Newsletter
