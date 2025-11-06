@@ -12,15 +12,48 @@ email:
 
 # Search Configuration
 search:
-  # Search queries for finding relevant papers
-  queries:
-    - '"digital twin" AND (consumer OR marketing OR customer)'
-    - '"synthetic users" OR "synthetic consumers" OR "virtual personas"'
-    - '(LLM OR "language model") AND (agent OR agents) AND (marketing OR consumer)'
-    - '"agent based simulation" AND (behavior OR decision making)'
-    - '"survey augmentation" OR "preference prediction" OR retrodiction'
-    - '"test retest reliability" OR "individual level accuracy" OR "aggregate accuracy"'
-    - '"retrieval augmented" AND (research OR evaluation)'
+  # Use LLM to generate search queries (recommended)
+  use_llm_query_generation: true
+
+  # Research focus for LLM query generation
+  research_focus: |
+    Digital twins and synthetic users for consumer and customer research.
+    Focus on:
+    - Behavioral modeling of consumers using AI/LLM agents
+    - Synthetic personas and virtual consumers for market research
+    - LLM-based agents for understanding customer preferences and behavior
+    - Agent-based modeling for consumer decision making
+    - Survey augmentation and preference prediction using language models
+    - Applications in marketing, consumer research, and behavioral science
+
+    NOT interested in:
+    - Manufacturing digital twins
+    - Industrial IoT applications
+    - Physical infrastructure twins
+    - Supply chain optimization
+    - Smart cities or transportation
+
+  # Topics to explicitly exclude from searches
+  exclude_topics:
+    - manufacturing
+    - industrial IoT
+    - smart cities
+    - supply chain
+    - infrastructure monitoring
+    - predictive maintenance
+
+  # Fallback queries (used if LLM generation is disabled or fails)
+  fallback_queries:
+    - '"digital twin" AND (consumer OR customer) AND (behavior OR preference) NOT (manufacturing OR IoT OR industrial)'
+    - '"synthetic users" AND "language model" AND (marketing OR consumer OR survey)'
+    - '("synthetic persona" OR "virtual consumer") AND (simulation OR modeling)'
+    - '"LLM agent" AND (consumer OR customer) AND (research OR study OR survey)'
+    - '"agent based" AND (consumer OR customer) AND (simulation OR modeling) NOT (supply chain)'
+    - '"preference prediction" AND ("language model" OR LLM) AND consumer'
+    - '"survey augmentation" OR ("retrodiction" AND consumer)'
+
+  # Number of queries to generate
+  num_queries: 7
 
   # Number of days to look back for papers
   search_window_days: 7

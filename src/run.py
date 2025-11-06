@@ -25,6 +25,7 @@ from src.search_crossref import CrossrefSearcher
 from src.summarizer import Summarizer
 from src.emailer import EmailSender
 from src.util_state import StateManager
+from src.query_generator import QueryGenerator
 
 
 def load_config(config_file: str = "config.yaml") -> Dict:
@@ -49,15 +50,40 @@ def search_papers(config: Dict) -> List[Dict]:
         List of paper dictionaries
     """
     search_config = config.get('search', {})
-    queries = search_config.get('queries', [])
     lookback_days = search_config.get('search_window_days', 7)
     max_results = search_config.get('max_results_per_source', 12)
+
+    # Generate or get queries
+    use_llm = search_config.get('use_llm_query_generation', False)
+    if use_llm:
+        print("Generating search queries using LLM...")
+        try:
+            query_gen = QueryGenerator()
+            queries = query_gen.generate_queries(
+                research_focus=search_config.get('research_focus', ''),
+                num_queries=search_config.get('num_queries', 7),
+                exclude_topics=search_config.get('exclude_topics', [])
+            )
+            print(f"Generated {len(queries)} queries:")
+            for i, q in enumerate(queries, 1):
+                print(f"  {i}. {q}")
+        except Exception as e:
+            print(f"Error generating queries: {e}")
+            print("Falling back to configured queries")
+            queries = search_config.get('fallback_queries', [])
+    else:
+        queries = search_config.get('fallback_queries', [])
+        print(f"Using {len(queries)} configured queries")
+
+    if not queries:
+        print("Error: No queries available")
+        return []
 
     all_papers = []
     seen_ids = set()
 
     # Search arXiv
-    print("Searching arXiv...")
+    print("\nSearching arXiv...")
     arxiv_searcher = ArxivSearcher()
     for query in queries:
         papers = arxiv_searcher.search(query, lookback_days, max_results)
@@ -66,10 +92,10 @@ def search_papers(config: Dict) -> List[Dict]:
             if paper_id and paper_id not in seen_ids:
                 seen_ids.add(paper_id)
                 all_papers.append(paper)
-        print(f"  Query '{query[:50]}...': found {len(papers)} papers")
+        print(f"  Query '{query[:60]}...': found {len(papers)} papers")
 
     # Search Crossref
-    print("Searching Crossref...")
+    print("\nSearching Crossref...")
     crossref_searcher = CrossrefSearcher()
     for query in queries:
         papers = crossref_searcher.search(query, lookback_days, max_results)
@@ -79,12 +105,12 @@ def search_papers(config: Dict) -> List[Dict]:
             if paper_doi and paper_doi not in seen_ids:
                 seen_ids.add(paper_doi)
                 all_papers.append(paper)
-        print(f"  Query '{query[:50]}...': found {len(papers)} papers")
+        print(f"  Query '{query[:60]}...': found {len(papers)} papers")
 
     # Sort by date (newest first)
     all_papers.sort(key=lambda x: x.get('date', ''), reverse=True)
 
-    print(f"Total papers found: {len(all_papers)}")
+    print(f"\nTotal papers found: {len(all_papers)}")
     return all_papers
 
 

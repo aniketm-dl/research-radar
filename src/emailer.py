@@ -111,87 +111,210 @@ class EmailSender:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            color: #e0e0e0;
+            background: #0a0a0a;
             padding: 20px;
-            background-color: #f5f5f5;
         }
         .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #2a2a2a;
         }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+        .header {
+            background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+            padding: 40px 30px;
+            border-bottom: 2px solid #d4ff00;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(212,255,0,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        .header h1 {
+            font-size: 32px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+        .header .accent {
+            color: #d4ff00;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+        .content {
+            padding: 30px;
         }
         .paper {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #3498db;
-            border-radius: 5px;
+            margin-bottom: 30px;
+            padding: 24px;
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .paper::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: linear-gradient(180deg, #d4ff00 0%, #a0c000 100%);
+        }
+        .paper-number {
+            display: inline-block;
+            background: #d4ff00;
+            color: #000;
+            font-size: 11px;
+            font-weight: 900;
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
         .paper-title {
             font-size: 18px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 10px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
         }
         .paper-title a {
-            color: #3498db;
+            color: #ffffff;
             text-decoration: none;
+            transition: color 0.2s ease;
         }
         .paper-title a:hover {
-            text-decoration: underline;
+            color: #d4ff00;
         }
         .metadata {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #2a2a2a;
         }
-        .metadata span {
-            margin-right: 15px;
+        .metadata-item {
+            color: #888;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .metadata-item strong {
+            color: #d4ff00;
+            font-weight: 600;
         }
         .summary {
-            color: #444;
+            color: #b0b0b0;
             line-height: 1.7;
+            font-size: 14px;
         }
         .summary p {
             margin-bottom: 12px;
         }
         .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
-            font-size: 12px;
+            background: #0f0f0f;
+            padding: 30px;
             text-align: center;
+            border-top: 1px solid #2a2a2a;
+        }
+        .footer-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-stat {
+            font-size: 12px;
+            color: #666;
+        }
+        .footer-stat strong {
+            color: #d4ff00;
+            font-weight: 700;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        .footer-text {
+            color: #666;
+            font-size: 11px;
+            margin-top: 16px;
+        }
+        .badge {
+            display: inline-block;
+            background: #2a2a2a;
+            color: #d4ff00;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Darpan Research Radar</h1>
-        <p style="color: #666; margin-bottom: 30px;">
-            Latest research on digital twins, synthetic users, and LLM agents for consumer research.
-        </p>
+        <div class="header">
+            <h1><span class="accent">DARPAN</span> RESEARCH RADAR</h1>
+            <p class="subtitle">
+                Latest research on digital twins, synthetic users, and LLM agents for consumer research
+            </p>
+        </div>
+        <div class="content">
 """
 
-        for paper in papers:
-            html += self._format_paper_html(paper)
+        for i, paper in enumerate(papers, 1):
+            html += self._format_paper_html(paper, i)
 
         html += f"""
+        </div>
         <div class="footer">
-            <p>Generated on {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}</p>
-            <p>This digest includes {len(papers)} paper{'s' if len(papers) != 1 else ''} from arXiv and Crossref.</p>
+            <div class="footer-stats">
+                <div class="footer-stat">
+                    <strong>{len(papers)}</strong>
+                    <span>Papers</span>
+                </div>
+                <div class="footer-stat">
+                    <strong>{datetime.utcnow().strftime('%H:%M')}</strong>
+                    <span>UTC</span>
+                </div>
+                <div class="footer-stat">
+                    <strong>{datetime.utcnow().strftime('%d %b')}</strong>
+                    <span>{datetime.utcnow().strftime('%Y')}</span>
+                </div>
+            </div>
+            <p class="footer-text">
+                Automated research digest from arXiv and Crossref • Powered by Gemini AI
+            </p>
         </div>
     </div>
 </body>
@@ -199,7 +322,7 @@ class EmailSender:
 
         return html
 
-    def _format_paper_html(self, paper: Dict) -> str:
+    def _format_paper_html(self, paper: Dict, index: int) -> str:
         """Format a single paper for HTML email."""
         authors = paper.get('authors', [])
         if isinstance(authors, list):
@@ -228,13 +351,14 @@ class EmailSender:
 
         return f"""
         <div class="paper">
+            <span class="paper-number">PAPER {index:02d}</span>
             <div class="paper-title">
                 <a href="{paper.get('url', '#')}" target="_blank">{paper.get('title', 'Title not available')}</a>
             </div>
             <div class="metadata">
-                <span><strong>Authors:</strong> {authors_str}</span><br>
-                <span><strong>Date:</strong> {paper.get('date', 'Date not available')}</span><br>
-                <span><strong>Source:</strong> {paper.get('source', 'Unknown').upper()}</span>
+                <span class="metadata-item"><strong>Authors:</strong> {authors_str}</span>
+                <span class="metadata-item"><strong>Date:</strong> {paper.get('date', 'Date not available')}</span>
+                <span class="metadata-item"><strong>Source:</strong> {paper.get('source', 'Unknown').upper()}</span>
             </div>
             <div class="summary">
                 {formatted_summary}
