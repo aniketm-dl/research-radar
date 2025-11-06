@@ -1,0 +1,49 @@
+# Research Newsletter Configuration
+
+# Email Configuration
+email:
+  recipients:
+    - "manav@darpanlabs.ai"
+    - "aniketg@darpanlabs.ai"
+    - "aniketm@darpanlabs.ai"
+  from_name: "Darpan Research Radar"
+  from_email: "aniketm@darpanlabs.ai"
+  subject_prefix: "[Darpan Research Radar]"
+
+# Search Configuration
+search:
+  # Search queries for finding relevant papers
+  queries:
+    - '"digital twin" AND (consumer OR marketing OR customer)'
+    - '"synthetic users" OR "synthetic consumers" OR "virtual personas"'
+    - '(LLM OR "language model") AND (agent OR agents) AND (marketing OR consumer)'
+    - '"agent based simulation" AND (behavior OR decision making)'
+    - '"survey augmentation" OR "preference prediction" OR retrodiction'
+    - '"test retest reliability" OR "individual level accuracy" OR "aggregate accuracy"'
+    - '"retrieval augmented" AND (research OR evaluation)'
+
+  # Number of days to look back for papers
+  search_window_days: 7
+
+  # Maximum results to fetch per source
+  max_results_per_source: 12
+
+# Summarization Configuration
+summarization:
+  # Gemini model to use (gemini-pro, gemini-1.5-pro)
+  model: "gemini-pro"
+
+  # Temperature for summarization (0.0 = deterministic, 1.0 = creative)
+  temperature: 0.2
+
+  # Maximum tokens per summary
+  max_tokens: 600
+
+  # Maximum summaries to include per digest
+  max_summaries: 8
+
+# SMTP Configuration (defaults, can be overridden by environment variables)
+smtp:
+  host: "smtp.gmail.com"
+  port: 465
+  use_ssl: true

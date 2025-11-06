@@ -1,0 +1,95 @@
+name: Research Newsletter
+
+on:
+  # Schedule to run every 4 hours
+  schedule:
+    - cron: '0 */4 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run with debug logging'
+        required: false
+        default: false
+
+# Prevent concurrent runs
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  generate-and-send:
+    name: Generate and Send Newsletter
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full history for state file updates
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Debug - Check environment
+      if: ${{ inputs.debug_enabled }}
+      run: |
+        echo "Python version:"
+        python --version
+        echo "Installed packages:"
+        pip list
+        echo "Working directory:"
+        pwd
+        echo "Directory contents:"
+        ls -la
+
+    - name: Run newsletter generator
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        SMTP_HOST: ${{ secrets.SMTP_HOST || 'smtp.gmail.com' }}
+        SMTP_PORT: ${{ secrets.SMTP_PORT || '465' }}
+        SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      run: |
+        python -m src.run
+
+    - name: Commit state file updates
+      if: success()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        # Check if state file has changed
+        if git diff --quiet state/seen_ids.json; then
+          echo "No changes to state file"
+        else
+          git add state/seen_ids.json
+          git commit -m "Update seen papers state [skip ci]"
+          git push
+        fi
+
+    - name: Upload state file as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: state-file
+        path: state/seen_ids.json
+        retention-days: 30
+
+    - name: Report failure
+      if: failure()
+      run: |
+        echo "Newsletter generation failed!"
+        echo "Please check the logs for errors."
+        # You could add additional notifications here (Slack, Discord, etc.)
