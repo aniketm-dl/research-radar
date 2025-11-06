@@ -134,9 +134,8 @@ def main():
     print(f"\nSummarizing {len(papers_to_summarize)} papers...")
     summarizer_config = config.get('summarization', {})
     summarizer = Summarizer(
-        model=summarizer_config.get('model', 'gpt-4o'),
-        temperature=summarizer_config.get('temperature', 0.2),
-        max_tokens=summarizer_config.get('max_tokens', 600)
+        model=summarizer_config.get('model', 'gemini-pro'),
+        temperature=summarizer_config.get('temperature', 0.2)
     )
 
     # Add summaries to papers
