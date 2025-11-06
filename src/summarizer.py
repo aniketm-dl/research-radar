@@ -11,13 +11,13 @@ import google.generativeai as genai
 class Summarizer:
     """Summarize research papers using Google Gemini API."""
 
-    def __init__(self, api_key: Optional[str] = None, model: str = "gemini-1.5-flash-latest", temperature: float = 0.2):
+    def __init__(self, api_key: Optional[str] = None, model: str = "gemini-pro", temperature: float = 0.2):
         """
         Initialize the summarizer with Google Gemini.
 
         Args:
             api_key: Gemini API key (uses environment variable if not provided)
-            model: Model to use for summarization (gemini-1.5-flash-latest or gemini-1.5-pro-latest)
+            model: Model to use for summarization (gemini-pro)
             temperature: Temperature for generation
         """
         if api_key is None:

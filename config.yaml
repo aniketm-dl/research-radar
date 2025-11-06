@@ -30,8 +30,8 @@ search:
 
 # Summarization Configuration
 summarization:
-  # Gemini model to use (gemini-1.5-flash-latest, gemini-1.5-pro-latest)
-  model: "gemini-1.5-flash-latest"
+  # Gemini model to use
+  model: "gemini-pro"
 
   # Temperature for summarization (0.0 = deterministic, 1.0 = creative)
   temperature: 0.2
