@@ -58,35 +58,74 @@ class RelevanceFilter:
         title = paper.get('title', 'Unknown')
         abstract = paper.get('abstract', 'No abstract available')
 
-        prompt = f"""You are evaluating research papers for relevance to a specific business.
+        prompt = f"""You are evaluating research papers for relevance to Darpan Labs' specific business needs.
 
-BUSINESS CONTEXT:
+DARPAN LABS BUSINESS CONTEXT:
 {business_context}
+
+DETAILED BUSINESS FOCUS (from pitch):
+• Core Technology: AI-powered digital twins of consumers for market research
+  - Creating synthetic personas/users that mimic real consumer behavior with 85% accuracy
+  - Using LLM agents to simulate customer decision-making and preferences
+  - Behavioral modeling based on internal customer data and external sources
+
+• Key Use Cases:
+  1. Product testing and feature discovery
+  2. Marketing campaign optimization
+  3. Pricing sensitivity analysis
+  4. A/B testing without live users
+  5. Consumer preference prediction
+  6. Market research without surveys
+
+• Technologies of Interest:
+  - Large Language Models (LLMs) for persona generation
+  - Agent-based modeling for consumer simulation
+  - Behavioral prediction and preference modeling
+  - Synthetic data generation for consumer insights
+  - Validation methods for synthetic personas (accuracy, test-retest stability)
+  - Fine-tuning, retrieval, and agent architectures
+
+• EXPLICITLY NOT RELEVANT:
+  - Manufacturing, supply chain, or industrial automation
+  - IoT devices or hardware (unless for consumer behavior tracking)
+  - Healthcare and medical applications (unless about patient behavioral modeling)
+  - Infrastructure, networking, or systems engineering
+  - Pure theoretical work without practical consumer applications
 
 PAPER TO EVALUATE:
 Title: {title}
 Abstract: {abstract}
 
-Task: Score this paper's relevance to the business on a scale of 0-10:
-- 0-2: Completely irrelevant (e.g., manufacturing, IoT devices, infrastructure)
-- 3-4: Tangentially related but not useful
-- 5-6: Somewhat relevant, has some applicable concepts
-- 7-8: Relevant, directly applicable to the business
-- 9-10: Highly relevant, core to the business focus
+SCORING CRITERIA:
+Score this paper's relevance on a scale of 0-10:
 
-CRITICAL EVALUATION CRITERIA:
-1. Is this about CONSUMER/CUSTOMER research or industrial/manufacturing applications?
-2. Does it involve behavioral modeling, preference prediction, or market research?
-3. Does it use AI/LLM agents for understanding human behavior?
-4. Is it about creating synthetic data/personas for consumer insights?
+10 = CORE TO BUSINESS: LLM-based synthetic personas, consumer digital twins, behavioral agent simulation
+9 = HIGHLY RELEVANT: Direct methods for consumer behavior prediction, preference modeling, synthetic user generation
+8 = VERY RELEVANT: LLM agents, behavioral modeling, personalization systems applicable to consumers
+7 = RELEVANT: Applicable techniques for persona creation, evaluation methods, data sources for consumer modeling
+6 = MODERATELY RELEVANT: General AI/ML methods that could be adapted for consumer digital twins
+5 = SOMEWHAT RELEVANT: Tangentially related concepts (e.g., behavioral modeling in non-consumer contexts)
+4 = LOOSELY RELATED: AI/ML work with unclear consumer application
+3 = BARELY RELATED: Technical AI work without clear path to consumer modeling
+2 = NOT RELEVANT: Wrong domain (e.g., manufacturing, infrastructure)
+1-0 = COMPLETELY IRRELEVANT: No connection to consumer behavior, digital twins, or AI agents
+
+CRITICAL QUESTIONS:
+1. Does this involve CONSUMER/CUSTOMER behavior, preferences, or decision-making?
+2. Does it use LLM agents or synthetic personas for understanding humans?
+3. Could the methods be applied to creating/validating digital twins of consumers?
+4. Is it about behavioral prediction, personalization, or market research?
 
 FORMAT YOUR RESPONSE EXACTLY AS:
 SCORE: [number 0-10]
-REASON: [one sentence explanation]
+REASON: [one sentence explanation relating to Darpan's specific use cases]
 
-Example:
-SCORE: 2
-REASON: This paper is about aerostatic thrust bearings in manufacturing, which is completely irrelevant to consumer behavioral modeling.
+Example responses:
+SCORE: 9
+REASON: Paper presents LLM-based agent framework for simulating consumer decision-making in e-commerce, directly applicable to Darpan's synthetic persona generation.
+
+SCORE: 3
+REASON: Paper is about aerostatic thrust bearings in manufacturing equipment, completely outside consumer behavioral modeling domain.
 
 Evaluate the paper now:"""
 

@@ -302,6 +302,28 @@ class EmailSender:
             font-weight: 600;
             letter-spacing: 0.5px;
         }
+        .tier-section {
+            margin-bottom: 30px;
+        }
+        .tier-header {
+            padding: 16px 24px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+            border-left: 4px solid #d4ff00;
+            border-radius: 8px;
+        }
+        .tier-title {
+            font-size: 16px;
+            font-weight: 900;
+            color: #d4ff00;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .tier-description {
+            font-size: 12px;
+            color: #888;
+        }
     </style>
 </head>
 <body>
@@ -315,8 +337,45 @@ class EmailSender:
         <div class="content">
 """
 
-        for i, paper in enumerate(papers, 1):
-            html += self._format_paper_html(paper, i)
+        # Separate papers into tiers based on relevance score
+        highly_relevant = [p for p in papers if p.get('relevance_score', 0) >= 7.0]
+        also_relevant = [p for p in papers if 5.0 <= p.get('relevance_score', 0) < 7.0]
+
+        paper_index = 1
+
+        # Highly Relevant Section
+        if highly_relevant:
+            html += """
+            <div class="tier-section">
+                <div class="tier-header">
+                    <div class="tier-title">Highly Relevant Research</div>
+                    <div class="tier-description">Core papers directly applicable to Darpan's digital twin technology</div>
+                </div>
+"""
+            for paper in highly_relevant:
+                html += self._format_paper_html(paper, paper_index)
+                paper_index += 1
+
+            html += """
+            </div>
+"""
+
+        # Also Relevant Section
+        if also_relevant:
+            html += """
+            <div class="tier-section">
+                <div class="tier-header">
+                    <div class="tier-title">Additional Insights</div>
+                    <div class="tier-description">Related research with applicable concepts and methods</div>
+                </div>
+"""
+            for paper in also_relevant:
+                html += self._format_paper_html(paper, paper_index)
+                paper_index += 1
+
+            html += """
+            </div>
+"""
 
         html += f"""
         </div>
@@ -336,7 +395,7 @@ class EmailSender:
                 </div>
             </div>
             <p class="footer-text">
-                Automated research digest from arXiv and Crossref • Powered by Gemini AI
+                Automated research digest from arXiv, Crossref, and Semantic Scholar • Powered by Gemini AI
             </p>
         </div>
     </div>
@@ -407,9 +466,33 @@ class EmailSender:
         text += f"This digest includes {len(papers)} paper{'s' if len(papers) != 1 else ''}.\n\n"
         text += "-" * 40 + "\n\n"
 
-        for i, paper in enumerate(papers, 1):
-            text += self._format_paper_text(paper, i)
-            text += "\n" + "-" * 40 + "\n\n"
+        # Separate papers into tiers
+        highly_relevant = [p for p in papers if p.get('relevance_score', 0) >= 7.0]
+        also_relevant = [p for p in papers if 5.0 <= p.get('relevance_score', 0) < 7.0]
+
+        paper_index = 1
+
+        # Highly Relevant Section
+        if highly_relevant:
+            text += "HIGHLY RELEVANT RESEARCH\n"
+            text += "Core papers directly applicable to Darpan's digital twin technology\n"
+            text += "-" * 40 + "\n\n"
+
+            for paper in highly_relevant:
+                text += self._format_paper_text(paper, paper_index)
+                text += "\n" + "-" * 40 + "\n\n"
+                paper_index += 1
+
+        # Also Relevant Section
+        if also_relevant:
+            text += "ADDITIONAL INSIGHTS\n"
+            text += "Related research with applicable concepts and methods\n"
+            text += "-" * 40 + "\n\n"
+
+            for paper in also_relevant:
+                text += self._format_paper_text(paper, paper_index)
+                text += "\n" + "-" * 40 + "\n\n"
+                paper_index += 1
 
         return text
 

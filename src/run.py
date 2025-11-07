@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.search_arxiv import ArxivSearcher
 from src.search_crossref import CrossrefSearcher
+from src.search_semantic_scholar import SemanticScholarSearcher
 from src.summarizer import Summarizer
 from src.emailer import EmailSender
 from src.util_state import StateManager
@@ -108,6 +109,18 @@ def search_papers(config: Dict) -> List[Dict]:
                 all_papers.append(paper)
         print(f"  Query '{query[:60]}...': found {len(papers)} papers")
 
+    # Search Semantic Scholar
+    print("\nSearching Semantic Scholar...")
+    semantic_scholar_searcher = SemanticScholarSearcher()
+    for query in queries:
+        papers = semantic_scholar_searcher.search(query, lookback_days, max_results)
+        for paper in papers:
+            paper_id = paper.get('id')
+            if paper_id and paper_id not in seen_ids:
+                seen_ids.add(paper_id)
+                all_papers.append(paper)
+        print(f"  Query '{query[:60]}...': found {len(papers)} papers")
+
     # Sort by date (newest first)
     all_papers.sort(key=lambda x: x.get('date', ''), reverse=True)
 
@@ -149,27 +162,64 @@ def main():
         print("No new papers to send. Exiting.")
         return
 
-    # Apply relevance filtering if enabled
+    # Apply relevance filtering with two-tier system
     search_config = config.get('search', {})
     use_relevance_filter = search_config.get('use_relevance_filtering', False)
 
     if use_relevance_filter:
         business_context = search_config.get('business_context', '')
-        min_score = search_config.get('min_relevance_score', 6.0)
+        highly_relevant_threshold = search_config.get('highly_relevant_threshold', 7.0)
+        also_relevant_threshold = search_config.get('also_relevant_threshold', 5.0)
+        min_total_papers = search_config.get('min_total_papers', 5)
 
         try:
             relevance_filter = RelevanceFilter()
-            relevant_papers = relevance_filter.filter_papers(
-                papers=unseen_papers,
-                business_context=business_context,
-                min_score=min_score
-            )
 
-            if not relevant_papers:
-                print(f"\nNo papers scored >= {min_score}/10. Exiting.")
+            # Score all papers
+            print(f"\nScoring {len(unseen_papers)} papers for relevance...")
+            scored_papers = []
+            for i, paper in enumerate(unseen_papers, 1):
+                title = paper.get('title', 'Unknown')
+                print(f"  [{i}/{len(unseen_papers)}] Scoring: {title[:60]}...")
+
+                score, reason = relevance_filter.score_paper(paper, business_context)
+                paper['relevance_score'] = score
+                paper['relevance_reason'] = reason
+
+                print(f"      Score: {score:.1f}/10 - {reason[:80]}...")
+
+                if score >= also_relevant_threshold:
+                    scored_papers.append(paper)
+
+            # Sort by score (highest first)
+            scored_papers.sort(key=lambda x: x.get('relevance_score', 0), reverse=True)
+
+            # Separate into two tiers
+            highly_relevant = [p for p in scored_papers if p.get('relevance_score', 0) >= highly_relevant_threshold]
+            also_relevant = [p for p in scored_papers if also_relevant_threshold <= p.get('relevance_score', 0) < highly_relevant_threshold]
+
+            print(f"\nFiltering results:")
+            print(f"  Highly relevant (>={highly_relevant_threshold}): {len(highly_relevant)} papers")
+            print(f"  Also relevant ({also_relevant_threshold}-{highly_relevant_threshold-0.1}): {len(also_relevant)} papers")
+
+            # Select papers to ensure minimum count
+            papers_to_process = []
+
+            # Add all highly relevant papers
+            papers_to_process.extend(highly_relevant)
+
+            # Add also relevant papers if we need more to reach minimum
+            if len(papers_to_process) < min_total_papers and also_relevant:
+                needed = min_total_papers - len(papers_to_process)
+                papers_to_process.extend(also_relevant[:needed])
+                print(f"  Added {min(needed, len(also_relevant))} also-relevant papers to reach minimum of {min_total_papers}")
+
+            if not papers_to_process:
+                print(f"\nNo papers scored >= {also_relevant_threshold}/10. Exiting.")
                 return
 
-            papers_to_process = relevant_papers
+            print(f"\nTotal papers selected: {len(papers_to_process)}")
+
         except Exception as e:
             print(f"Error in relevance filtering: {e}")
             print("Proceeding without relevance filtering")
@@ -178,7 +228,7 @@ def main():
         papers_to_process = unseen_papers
 
     # Limit to max summaries
-    max_summaries = config.get('summarization', {}).get('max_summaries', 8)
+    max_summaries = config.get('summarization', {}).get('max_summaries', 12)
     if len(papers_to_process) > max_summaries:
         print(f"\nLimiting to {max_summaries} papers")
         papers_to_summarize = papers_to_process[:max_summaries]

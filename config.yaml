@@ -17,7 +17,11 @@ search:
 
   # Use LLM to filter papers by relevance (highly recommended)
   use_relevance_filtering: true
-  min_relevance_score: 6.0  # Papers must score 6/10 or higher
+
+  # Two-tier relevance system
+  highly_relevant_threshold: 7.0  # Papers scoring 7+ are "highly relevant"
+  also_relevant_threshold: 5.0    # Papers scoring 5-6.9 are "also relevant"
+  min_total_papers: 5             # Minimum papers to include in newsletter
 
   # Darpan Labs business context for relevance filtering
   business_context: |
@@ -102,7 +106,7 @@ summarization:
   max_tokens: 600
 
   # Maximum summaries to include per digest
-  max_summaries: 8
+  max_summaries: 12
 
 # SMTP Configuration (defaults, can be overridden by environment variables)
 smtp:
