@@ -124,7 +124,8 @@ class EmailSender:
             padding: 20px;
         }
         .container {
-            max-width: 800px;
+            width: 95%;
+            max-width: 1200px;
             margin: 0 auto;
             background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
             border-radius: 16px;
@@ -239,6 +240,28 @@ class EmailSender:
         .summary p {
             margin-bottom: 12px;
         }
+        .practical-application {
+            margin-top: 16px;
+            padding: 16px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border: 1px solid #d4ff00;
+            border-left: 4px solid #d4ff00;
+            border-radius: 8px;
+        }
+        .section-label {
+            color: #d4ff00;
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .practical-application p {
+            color: #b0b0b0;
+            line-height: 1.7;
+            font-size: 13px;
+            margin: 0;
+        }
         .footer {
             background: #0f0f0f;
             padding: 30px;
@@ -349,6 +372,16 @@ class EmailSender:
         paragraphs = [p.strip() for p in summary_text.split('\n\n') if p.strip()]
         formatted_summary = ''.join([f'<p>{p}</p>' for p in paragraphs])
 
+        # Format practical application if present
+        practical_app = paper.get('practical_application', '')
+        practical_app_html = ''
+        if practical_app:
+            practical_app_html = f'''
+            <div class="practical-application">
+                <div class="section-label">RELEVANCE TO DARPAN LABS</div>
+                <p>{practical_app}</p>
+            </div>'''
+
         return f"""
         <div class="paper">
             <span class="paper-number">PAPER {index:02d}</span>
@@ -362,7 +395,7 @@ class EmailSender:
             </div>
             <div class="summary">
                 {formatted_summary}
-            </div>
+            </div>{practical_app_html}
         </div>
 """
 
@@ -403,6 +436,12 @@ class EmailSender:
         else:
             summary_text = summary
 
+        # Include practical application if present
+        practical_app = paper.get('practical_application', '')
+        practical_app_text = ''
+        if practical_app:
+            practical_app_text = f"\n\nRelevance to Darpan Labs:\n{practical_app}"
+
         return f"""[{index}] {paper.get('title', 'Title not available')}
 
 Authors: {authors_str}
@@ -411,5 +450,5 @@ Source: {paper.get('source', 'Unknown').upper()}
 Link: {paper.get('url', 'URL not available')}
 
 Summary:
-{summary_text}
+{summary_text}{practical_app_text}
 """

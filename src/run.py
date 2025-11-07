@@ -210,6 +210,20 @@ def main():
 
     print(f"Successfully summarized {len(papers_with_summaries)} papers")
 
+    # Generate practical applications for each paper
+    print(f"\nGenerating practical applications for {len(papers_with_summaries)} papers...")
+    business_context = search_config.get('business_context', '')
+
+    for paper in papers_with_summaries:
+        print(f"  Analyzing: {paper.get('title', 'Unknown')[:60]}...")
+        practical_app = summarizer.generate_practical_application(paper, business_context)
+        if practical_app:
+            paper['practical_application'] = practical_app
+        else:
+            print(f"    Warning: Failed to generate practical application")
+
+    print(f"Completed practical application analysis")
+
     # Send email digest
     print("\nSending email digest...")
     email_config = config.get('email', {})

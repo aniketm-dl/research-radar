@@ -49,7 +49,7 @@ class Summarizer:
         """Get a default prompt template as fallback."""
         return """SYSTEM
 You are a precise research analyst for a newsletter read by ML engineers and PMs at a customer-twin startup.
-Goal. Summarize each paper in two to three short paragraphs and link it to customer digital twins, synthetic users, LLM agents for consumer research, and practical evaluation.
+Goal. Summarize each paper in ONE CONCISE PARAGRAPH (3-5 sentences) that links it to customer digital twins, synthetic users, LLM agents for consumer research, and practical evaluation.
 
 Constraints.
 Be factual and verify against provided metadata and abstract.
@@ -61,6 +61,7 @@ c) modeling choices such as fine-tuning, retrieval, and agents
 d) evaluation such as individual and aggregate accuracy and test–retest stability
 Mention one limitation or ethical risk in one concise sentence if relevant.
 Output only the fields below. Do not add preamble.
+CRITICAL: The summary MUST be exactly ONE paragraph with NO line breaks.
 
 Ultra-think instructions. Think stepwise in private. Return only the final answer. Prefer concrete claims and numbers over adjectives. Surface one insight that helps a product team decide whether to adopt or replicate the method.
 
@@ -78,7 +79,7 @@ LINK: {{url}}
 AUTHORS: {{authors}}
 DATE: {{date}}
 SUMMARY:
-{{write two to three paragraphs tailored to customer twins. do not use bullets}}"""
+{{write exactly ONE paragraph (3-5 sentences) tailored to customer twins. NO line breaks. NO bullets.}}"""
 
     def _fill_template(self, paper: Dict) -> str:
         """
@@ -165,6 +166,82 @@ SUMMARY:
             # Check if it's a safety/content filtering issue
             if hasattr(e, 'safety_ratings'):
                 print(f"Safety ratings: {e.safety_ratings}")
+            return None
+
+    def generate_practical_application(self, paper: Dict, business_context: str) -> Optional[str]:
+        """
+        Generate a practical application analysis for how the paper applies to Darpan Labs work.
+
+        Args:
+            paper: Dictionary containing paper metadata and summary
+            business_context: Description of Darpan Labs' business and focus
+
+        Returns:
+            Practical application text or None if generation fails
+        """
+        try:
+            # Extract paper details
+            title = paper.get('title', 'Unknown')
+            abstract = paper.get('abstract', 'No abstract available')
+            summary = paper.get('summary', '')
+
+            # Extract just the summary text if it's formatted
+            if 'SUMMARY:' in summary:
+                summary_parts = summary.split('SUMMARY:')
+                if len(summary_parts) > 1:
+                    summary_text = summary_parts[1].strip()
+                else:
+                    summary_text = summary
+            else:
+                summary_text = summary
+
+            # Create prompt for practical application
+            prompt = f"""You are analyzing research papers for practical applications at Darpan Labs.
+
+DARPAN LABS CONTEXT:
+{business_context}
+
+RESEARCH PAPER:
+Title: {title}
+Abstract: {abstract}
+Key Findings: {summary_text}
+
+TASK:
+Write exactly ONE SHORT PARAGRAPH (2-4 sentences) analyzing how this paper's methods, findings, or insights could be practically applied to Darpan Labs' work building digital twins of consumers.
+
+Focus on:
+- Specific techniques or methodologies that could be adapted
+- How the findings relate to consumer behavior modeling or synthetic persona creation
+- Practical implementation considerations for digital twin development
+
+Be concrete and actionable. If the application is limited or indirect, state that honestly.
+
+OUTPUT FORMAT:
+Write ONLY the analysis paragraph. NO headers, NO labels, NO preamble. Just the paragraph."""
+
+            # Generate practical application using Gemini
+            generation_config = genai.GenerationConfig(
+                temperature=self.temperature,
+                max_output_tokens=300,
+                top_p=0.95,
+                top_k=40
+            )
+
+            response = self.model.generate_content(
+                prompt,
+                generation_config=generation_config
+            )
+
+            # Extract the practical application
+            if response and response.text:
+                application = response.text.strip()
+                return application
+            else:
+                print(f"No response from Gemini for practical application: {title[:50]}...")
+                return None
+
+        except Exception as e:
+            print(f"Error generating practical application for '{paper.get('title', 'Unknown')}': {e}")
             return None
 
     def summarize_batch(self, papers: List[Dict]) -> Dict[str, str]:
