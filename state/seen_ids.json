@@ -259,7 +259,43 @@
     "10.32722/baei.v2i01.7773": {
       "sent_date": "2025-11-14T03:39:24.265393",
       "title": "The Influence of Customer Experience on Repurchase Behavior in the E-Commerce Industry: A Case Study of April Eyewear on Shopee"
+    },
+    "2511.07338": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas"
+    },
+    "2511.09710": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Echoing: Identity Failures when LLM Agents Talk to Each Other"
+    },
+    "2511.10342": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Regret, Uncertainty, and Bounded Rationality in Norm-Driven Decisions"
+    },
+    "2511.10338": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "BhashaKritika: Building Synthetic Pretraining Data at Scale for Indic Languages"
+    },
+    "2511.10277": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Fixed-Persona SLMs with Modular Memory: Scalable NPC Dialogue on Consumer Hardware"
+    },
+    "2511.10051": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "GraphIF: Enhancing Multi-Turn Instruction Following for Large Language Models with Relation Graph Prompt"
+    },
+    "2511.09381": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Self-Correcting Large Language Models: Generation vs. Multiple Choice"
+    },
+    "2511.09586": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Scaling Environments for LLM Agents in the Era of Learning from Interaction: A Survey"
+    },
+    "2511.09149": {
+      "sent_date": "2025-11-15T03:38:01.033850",
+      "title": "Enabling Agents to Communicate Entirely in Latent Space"
     }
   },
-  "last_run": "2025-11-14T03:39:24.265393"
+  "last_run": "2025-11-15T03:38:01.033850"
 }
