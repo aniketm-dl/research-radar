@@ -295,7 +295,27 @@
     "2511.09149": {
       "sent_date": "2025-11-15T03:38:01.033850",
       "title": "Enabling Agents to Communicate Entirely in Latent Space"
+    },
+    "2511.08721": {
+      "sent_date": "2025-11-16T03:43:54.990400",
+      "title": "Benevolent Dictators? On LLM Agent Behavior in Dictator Games"
+    },
+    "10.15390/es.2012.999": {
+      "sent_date": "2025-11-16T03:43:54.990400",
+      "title": "An Examination of the Relationship amongst Decision-Making Strategies and Ego Identity Statuses Karar Verme Stratejileri ve Ego Kimlik Stat\u00fcleri Aras\u0131ndaki \u0130li\u015fkilerin \u0130ncelenmesi"
+    },
+    "2511.10283": {
+      "sent_date": "2025-11-16T03:43:54.990400",
+      "title": "Behavior Modeling for Training-free Building of Private Domain Multi Agent System"
+    },
+    "2511.10030": {
+      "sent_date": "2025-11-16T03:43:54.990400",
+      "title": "Multi-agent In-context Coordination via Decentralized Memory Retrieval"
+    },
+    "2511.09873": {
+      "sent_date": "2025-11-16T03:43:54.990400",
+      "title": "HierRouter: Coordinated Routing of Specialized Large Language Models via Reinforcement Learning"
     }
   },
-  "last_run": "2025-11-15T03:38:01.033850"
+  "last_run": "2025-11-16T03:43:54.990400"
 }
