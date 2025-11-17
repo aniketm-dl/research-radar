@@ -315,7 +315,27 @@
     "2511.09873": {
       "sent_date": "2025-11-16T03:43:54.990400",
       "title": "HierRouter: Coordinated Routing of Specialized Large Language Models via Reinforcement Learning"
+    },
+    "2511.11370": {
+      "sent_date": "2025-11-17T03:44:31.180885",
+      "title": "SRLF: An Agent-Driven Set-Wise Reflective Learning Framework for Sequential Recommendation"
+    },
+    "10.37275/oaijss.v8i2.298": {
+      "sent_date": "2025-11-17T03:44:31.180885",
+      "title": "The \u2018Live\u2019 Gaze: A Neuromarketing and Eye-Tracking Analysis of Consumer Attention and Impulse Buying on Shopee Live and TikTok Shop in Indonesia"
+    },
+    "2511.11551": {
+      "sent_date": "2025-11-17T03:44:31.180885",
+      "title": "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping"
+    },
+    "2511.11306": {
+      "sent_date": "2025-11-17T03:44:31.180885",
+      "title": "iMAD: Intelligent Multi-Agent Debate for Efficient and Accurate LLM Inference"
+    },
+    "2511.10949": {
+      "sent_date": "2025-11-17T03:44:31.180885",
+      "title": "Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting"
     }
   },
-  "last_run": "2025-11-16T03:43:54.990400"
+  "last_run": "2025-11-17T03:44:31.180885"
 }
