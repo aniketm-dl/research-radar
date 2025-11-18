@@ -335,7 +335,31 @@
     "2511.10949": {
       "sent_date": "2025-11-17T03:44:31.180885",
       "title": "Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting"
+    },
+    "2511.12949": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "Can We Predict the Next Question? A Collaborative Filtering Approach to Modeling User Behavior"
+    },
+    "2511.13233": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "LLM-based Multi-Agent System for Simulating Strategic and Goal-Oriented Data Marketplaces"
+    },
+    "2511.13193": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "Cost-Effective Communication: An Auction-based Method for Language Agent Interaction"
+    },
+    "2511.12359": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "More Than Irrational: Modeling Belief-Biased Agents"
+    },
+    "2511.11793": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling"
+    },
+    "2511.08042": {
+      "sent_date": "2025-11-18T03:40:50.238650",
+      "title": "Towards a Standard, Enterprise-Relevant Agentic AI Benchmark: Lessons from 5.5 billion tokens' worth of agentic AI evaluations"
     }
   },
-  "last_run": "2025-11-17T03:44:31.180885"
+  "last_run": "2025-11-18T03:40:50.238650"
 }
