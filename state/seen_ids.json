@@ -359,7 +359,27 @@
     "2511.08042": {
       "sent_date": "2025-11-18T03:40:50.238650",
       "title": "Towards a Standard, Enterprise-Relevant Agentic AI Benchmark: Lessons from 5.5 billion tokens' worth of agentic AI evaluations"
+    },
+    "2511.14650": {
+      "sent_date": "2025-11-19T03:40:42.553192",
+      "title": "AutoTool: Efficient Tool Selection for Large Language Model Agents"
+    },
+    "2511.14460": {
+      "sent_date": "2025-11-19T03:40:42.553192",
+      "title": "Agent-R1: Training Powerful LLM Agents with End-to-End Reinforcement Learning"
+    },
+    "10.1101/2025.11.16.688668": {
+      "sent_date": "2025-11-19T03:40:42.553192",
+      "title": "Inhibition governs stimulus preference encoding in mPFC pyramidal neurons during a social choice"
+    },
+    "10.1007/s42001-025-00433-4": {
+      "sent_date": "2025-11-19T03:40:42.553192",
+      "title": "Auditing the bias of conversational AI systems in occupational recommendations: a novel approach to bias quantification via Holland\u2019s theory"
+    },
+    "2511.13614": {
+      "sent_date": "2025-11-19T03:40:42.553192",
+      "title": "Market-Dependent Communication in Multi-Agent Alpha Generation"
     }
   },
-  "last_run": "2025-11-18T03:40:50.238650"
+  "last_run": "2025-11-19T03:40:42.553192"
 }
