@@ -379,7 +379,27 @@
     "2511.13614": {
       "sent_date": "2025-11-19T03:40:42.553192",
       "title": "Market-Dependent Communication in Multi-Agent Alpha Generation"
+    },
+    "2511.15392": {
+      "sent_date": "2025-11-20T03:40:16.980733",
+      "title": "DEPO: Dual-Efficiency Preference Optimization for LLM Agents"
+    },
+    "2511.12319": {
+      "sent_date": "2025-11-20T03:40:16.980733",
+      "title": "Decision and Gender Biases in Large Language Models: A Behavioral Economic Perspective"
+    },
+    "2511.13410": {
+      "sent_date": "2025-11-20T03:40:16.980733",
+      "title": "Mem-PAL: Towards Memory-based Personalized Dialogue Assistants for Long-term User-Agent Interaction"
+    },
+    "2511.13290": {
+      "sent_date": "2025-11-20T03:40:16.980733",
+      "title": "Dropouts in Confidence: Moral Uncertainty in Human-LLM Alignment"
+    },
+    "10.1016/j.jretconser.2025.104622": {
+      "sent_date": "2025-11-20T03:40:16.980733",
+      "title": "Understanding user disengagement in social shopping platform: The roles of fatigue and dependency"
     }
   },
-  "last_run": "2025-11-19T03:40:42.553192"
+  "last_run": "2025-11-20T03:40:16.980733"
 }
