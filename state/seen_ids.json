@@ -419,7 +419,19 @@
     "2511.15992": {
       "sent_date": "2025-11-21T03:41:27.302210",
       "title": "Detecting Sleeper Agents in Large Language Models via Semantic Drift Analysis"
+    },
+    "10.63313/ebm.9118": {
+      "sent_date": "2025-11-22T03:31:38.862627",
+      "title": "A Study on Trust Mechanisms and Communication Effectiveness in Social Media KOL Marketing \u2014\u2014 A Case Study of Rednote"
+    },
+    "2511.15976": {
+      "sent_date": "2025-11-22T03:31:38.862627",
+      "title": "TOD-ProcBench: Benchmarking Complex Instruction-Following in Task-Oriented Dialogues"
+    },
+    "10.1007/s11109-025-10091-x": {
+      "sent_date": "2025-11-22T03:31:38.862627",
+      "title": "Inclusionary and Exclusionary Preferences: A Test of Three Cognitive Mechanisms"
     }
   },
-  "last_run": "2025-11-21T03:41:27.302210"
+  "last_run": "2025-11-22T03:31:38.862627"
 }
