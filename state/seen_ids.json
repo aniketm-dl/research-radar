@@ -475,7 +475,27 @@
     "2511.16769": {
       "sent_date": "2025-11-24T03:53:50.429173",
       "title": "Trust in AI emerges from distrust in humans: A machine learning study on decision-making guidance"
+    },
+    "2511.18413": {
+      "sent_date": "2025-11-25T03:43:44.295256",
+      "title": "Multi-Agent Collaborative Filtering: Orchestrating Users and Items for Agentic Recommendations"
+    },
+    "10.1111/joss.70092": {
+      "sent_date": "2025-11-25T03:43:44.295256",
+      "title": "Innovative Hedonic Testing: The Inherited Preference (\n                    <scp>iPref</scp>\n                    ) Approach in Consumer Sciences"
+    },
+    "10.70062/managementdynamics.v1i1.419": {
+      "sent_date": "2025-11-25T03:43:44.295256",
+      "title": "Social Media Sentiment Analysis as a Predictor of Product Launch Success in the Digital Marketplace"
+    },
+    "2511.19405": {
+      "sent_date": "2025-11-25T03:43:44.295256",
+      "title": "Learning Robust Social Strategies with Large Language Models"
+    },
+    "2511.17959": {
+      "sent_date": "2025-11-25T03:43:44.295256",
+      "title": "Towards Automating Data Access Permissions in AI Agents"
     }
   },
-  "last_run": "2025-11-24T03:53:50.429173"
+  "last_run": "2025-11-25T03:43:44.295256"
 }
