@@ -515,7 +515,27 @@
     "2511.20297": {
       "sent_date": "2025-11-26T03:43:46.472050",
       "title": "Improving Language Agents through BREW"
+    },
+    "10.61336/jiclt/25-01-108": {
+      "sent_date": "2025-11-27T03:42:21.611298",
+      "title": "Predicting Consumer Decision Making using Deep Learning Models in Digital Marketing"
+    },
+    "2511.20867": {
+      "sent_date": "2025-11-27T03:42:21.611298",
+      "title": "E-GEO: A Testbed for Generative Engine Optimization in E-Commerce"
+    },
+    "2511.21686": {
+      "sent_date": "2025-11-27T03:42:21.611298",
+      "title": "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework"
+    },
+    "2511.21446": {
+      "sent_date": "2025-11-27T03:42:21.611298",
+      "title": "Discrete Choice with Endogenous Peer Selection"
+    },
+    "10.2139/ssrn.5812519": {
+      "sent_date": "2025-11-27T03:42:21.611298",
+      "title": "Large Language Model Enhanced Click-Through Rate Prediction in Large-Scale E-commerce Systems"
     }
   },
-  "last_run": "2025-11-26T03:43:46.472050"
+  "last_run": "2025-11-27T03:42:21.611298"
 }
