@@ -615,7 +615,27 @@
     "2511.23061": {
       "sent_date": "2025-12-01T04:10:06.323348",
       "title": "The impact of anticonformity on the diffusion of innovation -- insights from the q-voter model"
+    },
+    "2512.01107": {
+      "sent_date": "2025-12-02T03:48:29.656928",
+      "title": "Foundation Priors"
+    },
+    "2512.00461": {
+      "sent_date": "2025-12-02T03:48:29.656928",
+      "title": "Whose Personae? Synthetic Persona Experiments in LLM Research and Pathways to Transparency"
+    },
+    "2512.00966": {
+      "sent_date": "2025-12-02T03:48:29.656928",
+      "title": "Mitigating Indirect Prompt Injection via Instruction-Following Intent Analysis"
+    },
+    "2511.23397": {
+      "sent_date": "2025-12-02T03:48:29.656928",
+      "title": "MegaChat: A Synthetic Persian Q&A Dataset for High-Quality Sales Chatbot Evaluation"
+    },
+    "2512.01439": {
+      "sent_date": "2025-12-02T03:48:29.656928",
+      "title": "Multilingual Conversational AI for Financial Assistance: Bridging Language Barriers in Indian FinTech"
     }
   },
-  "last_run": "2025-12-01T04:10:06.323348"
+  "last_run": "2025-12-02T03:48:29.656928"
 }
