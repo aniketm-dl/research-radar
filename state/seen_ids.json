@@ -655,7 +655,27 @@
     "2512.02981": {
       "sent_date": "2025-12-03T03:47:01.097361",
       "title": "InEx: Hallucination Mitigation via Introspection and Cross-Modal Multi-Agent Collaboration"
+    },
+    "2512.03238": {
+      "sent_date": "2025-12-04T03:48:20.971419",
+      "title": "How to DP-fy Your Data: A Practical Guide to Generating Synthetic Data With Differential Privacy"
+    },
+    "2512.03931": {
+      "sent_date": "2025-12-04T03:48:20.971419",
+      "title": "Autonomous Agents and Policy Compliance: A Framework for Reasoning About Penalties"
+    },
+    "2512.02358": {
+      "sent_date": "2025-12-04T03:48:20.971419",
+      "title": "Beyond Playtesting: A Generative Multi-Agent Simulation System for Massively Multiplayer Online Games"
+    },
+    "10.9708/jksci.2025.30.11.329": {
+      "sent_date": "2025-12-04T03:48:20.971419",
+      "title": "Understanding Young Users\u2019 Continued Use of AI Chatbots for Mental Health: A TAM and PSI Perspective"
+    },
+    "2512.03607": {
+      "sent_date": "2025-12-04T03:48:20.971419",
+      "title": "DeepRule: An Integrated Framework for Automated Business Rule Generation via Deep Predictive Modeling and Hybrid Search Optimization"
     }
   },
-  "last_run": "2025-12-03T03:47:01.097361"
+  "last_run": "2025-12-04T03:48:20.971419"
 }
