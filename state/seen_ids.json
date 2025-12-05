@@ -675,7 +675,27 @@
     "2512.03607": {
       "sent_date": "2025-12-04T03:48:20.971419",
       "title": "DeepRule: An Integrated Framework for Automated Business Rule Generation via Deep Predictive Modeling and Hybrid Search Optimization"
+    },
+    "10.58812/wsjee.v3i04.2469": {
+      "sent_date": "2025-12-05T03:47:13.017862",
+      "title": "Trends and Evolution of Neuromarketing Research in Understanding Consumer Behavior: A Bibliometric Analysis"
+    },
+    "2512.05065": {
+      "sent_date": "2025-12-05T03:47:13.017862",
+      "title": "Personalizing Agent Privacy Decisions via Logical Entailment"
+    },
+    "2512.04864": {
+      "sent_date": "2025-12-05T03:47:13.017862",
+      "title": "Are Your Agents Upward Deceivers?"
+    },
+    "2512.04771": {
+      "sent_date": "2025-12-05T03:47:13.017862",
+      "title": "Complementary Characterization of Agent-Based Models via Computational Mechanics and Diffusion Models"
+    },
+    "2512.04408": {
+      "sent_date": "2025-12-05T03:47:13.017862",
+      "title": "Executable Governance for AI: Translating Policies into Rules Using LLMs"
     }
   },
-  "last_run": "2025-12-04T03:48:20.971419"
+  "last_run": "2025-12-05T03:47:13.017862"
 }
