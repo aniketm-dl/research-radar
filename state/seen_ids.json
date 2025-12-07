@@ -1,105 +1,5 @@
 {
   "papers": {
-    "10.1016/j.ijengsci.2025.104407": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Performance analysis of an aerostatic thrust bearing lubricated by supercritical CO2 utilizing Elrod-Ng turbulence model"
-    },
-    "10.1016/j.epsr.2025.112397": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Sensibility analysis of the virtual synchronous generator using a small-Signal model"
-    },
-    "10.1016/j.jweia.2025.106263": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "A physics-informed deep learning framework for the tropical cyclones decay model"
-    },
-    "10.1016/j.jbusres.2025.115768": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "The mindful marketplace: ideological repackaging in influencer marketing"
-    },
-    "10.1016/j.ridd.2025.105157": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Early predictors of pragmatic language competence: A longitudinal study"
-    },
-    "10.1016/j.ajpe.2025.101663": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Learning Outcomes from Project Design: A Model for Integration in Pharmacy Education"
-    },
-    "10.1016/j.ajpe.2025.101782": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Strategic Curriculum Transformation in Pharmacy Education: A Model for Planning, Implementation, and Project Management"
-    },
-    "10.1016/j.ajpe.2025.101736": {
-      "sent_date": "2025-11-06T22:48:02.577676",
-      "title": "Advancing Student Success: Implementation of a Proactive Support Model at a College of Pharmacy"
-    },
-    "10.46550/t1vs7g28": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "5G E CONECTIVIDADE: IMPACTOS NA EDUCA\u00c7\u00c3O E NA ECONOMIA DIGITAL"
-    },
-    "10.1016/j.pnucene.2025.106120": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Study on the multi-physics field coupling behavior of four-petal fuel rods contact under normal and RIA conditions"
-    },
-    "10.1177/15701255251393049": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Contrasting Information Demand and Information Supply: Digital Platforms as Intermediaries of Citizen-Government Interaction"
-    },
-    "10.1016/j.ajpe.2025.101752": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Embracing the Digital Era Through a Required Technology in Healthcare Course"
-    },
-    "10.1016/j.ajpe.2025.101777": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Preparing Students to be Practice-ready in Digital Health"
-    },
-    "10.1177/29768640251386927": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "The legislative obsolescence of community control surveillance ordinances"
-    },
-    "10.1016/j.cirpj.2025.10.009": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Integrated vision-based in-line surface defect detection system for realizing zero-defect manufacturing of tapered rollers"
-    },
-    "10.1177/27723577251388360": {
-      "sent_date": "2025-11-06T22:50:26.769764",
-      "title": "Digital governance in Latin America: A\u00a0comprehensive analysis and future perspectives"
-    },
-    "2511.00993": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "Aligning LLM agents with human learning and adjustment behavior: a dual   agent approach"
-    },
-    "10.31234/osf.io/5nvps_v1": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "What Moves Parents to Recommend Digital Mental Health Tools for Youth? Behavioral Insights and Implications"
-    },
-    "10.1016/j.procs.2025.09.650": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "Towards Using Prompt Engineering in Large Language Models to Assist Decision Making"
-    },
-    "10.1016/j.procs.2025.09.520": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "The use of the Preference Vector Method \u2013 Vector Space of Increments (PVM\u2013VSI) in supporting the consumer decision related to the purchase of an electric car from the mini\u2013segment"
-    },
-    "10.1016/j.procs.2025.09.322": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "Usability and Frustration in Using Adaptive Functions for Decision Making: A User Study"
-    },
-    "2510.27630": {
-      "sent_date": "2025-11-06T23:10:08.897963",
-      "title": "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout   for Long-Horizon Task Training"
-    },
-    "10.5934/kjhe.2025.34.5.749": {
-      "sent_date": "2025-11-07T01:53:32.823470",
-      "title": "Analysis of the Impact of Consumer Psychological Characteristics and Consumer Capabilities on Consumer Confidence"
-    },
-    "10.54097/e20bw138": {
-      "sent_date": "2025-11-07T01:53:32.823470",
-      "title": "The Influence of Consumer Feedback on the Purchase Intention of Official Product Sponsors in Sports Event Sponsorship"
-    },
-    "10.1016/j.jretconser.2025.104607": {
-      "sent_date": "2025-11-07T01:53:32.823470",
-      "title": "Beyond algorithms: How socio-technical antecedents drive social-exchange outcomes in AI travel planning personalization"
-    },
     "10.1101/2025.11.05.686838": {
       "sent_date": "2025-11-07T04:33:36.945929",
       "title": "Generalizing Drift Diffusion Models with a State-Dependent Framework"
@@ -715,7 +615,19 @@
     "2512.04691": {
       "sent_date": "2025-12-06T03:40:20.273003",
       "title": "Towards Ethical Multi-Agent Systems of Large Language Models: A Mechanistic Interpretability Perspective"
+    },
+    "10.30762/wadiah.v9i1.1808": {
+      "sent_date": "2025-12-07T03:51:32.784951",
+      "title": "Penggunaan Theory Of Planned Behavior Untuk Memprediksi Investasi Emas Di Bank Syariah"
+    },
+    "10.53654/tangible.v10i2.688": {
+      "sent_date": "2025-12-07T03:51:32.784951",
+      "title": "Budaya Digital dalam Adopsi Akuntansi Berbasis Cloud: Pendekatan Netnografi"
+    },
+    "10.47679/jopp.7412702025": {
+      "sent_date": "2025-12-07T03:51:32.784951",
+      "title": "Online Gambling Consumer Behavior: Addiction, Social Stigma, Psychological Distress, and Gender Differences"
     }
   },
-  "last_run": "2025-12-06T03:40:20.273003"
+  "last_run": "2025-12-07T03:51:32.784951"
 }
