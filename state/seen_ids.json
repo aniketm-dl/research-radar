@@ -1,65 +1,5 @@
 {
   "papers": {
-    "10.1101/2025.11.05.686838": {
-      "sent_date": "2025-11-07T04:33:36.945929",
-      "title": "Generalizing Drift Diffusion Models with a State-Dependent Framework"
-    },
-    "10.56536/ijmres.v15i3.803": {
-      "sent_date": "2025-11-07T04:33:36.945929",
-      "title": "From Digital Service Excellence to Enduring Customer Relationships: Analyzing the Mediating Effect of Customer Satisfaction Between E-Banking Services Quality and Customer Loyalty"
-    },
-    "10.1111/dar.70068": {
-      "sent_date": "2025-11-07T04:33:36.945929",
-      "title": "A Scoping Review of Large Language Model Chatbot Use for\u00a0Alcohol and Other Drug Health Information"
-    },
-    "10.1038/s41746-025-02113-z": {
-      "sent_date": "2025-11-07T08:36:42.370828",
-      "title": "Reporting guidelines for studies involving generative artificial intelligence applications: what do I use, and when?"
-    },
-    "10.31234/osf.io/zksgb_v2": {
-      "sent_date": "2025-11-07T08:36:42.370828",
-      "title": "Control and Connection: Exploring Elderly Attitudes Towards Digital Assistants in Home Care"
-    },
-    "10.52783/jisem.v9i4.121": {
-      "sent_date": "2025-11-07T08:36:42.370828",
-      "title": "Unveiling Consumer Attitude and Intentions Toward Refurbished Mobile Phones"
-    },
-    "10.69680/ac.15.1.1": {
-      "sent_date": "2025-11-07T08:36:42.370828",
-      "title": "Preferencije potro\u0161a\u010da u konzumaciji craft piva Consumer Preferences in Craft\u2010Beer Consumption"
-    },
-    "10.63313/jcsft.9019": {
-      "sent_date": "2025-11-07T08:36:42.370828",
-      "title": "Architecting Trustworthy LLMs: A Unified TRUST Framework for Mitigating AI Hallucination"
-    },
-    "10.31119/jssa.2025.28.3.8": {
-      "sent_date": "2025-11-07T12:02:18.247417",
-      "title": "Subjective economic well-being within consumer service structures"
-    },
-    "10.3390/su17219916": {
-      "sent_date": "2025-11-07T12:02:18.247417",
-      "title": "Practice Primacy: Revisiting the Knowledge\u2013Action Gap in Pro-Environmental Behavior with eXplainable AI"
-    },
-    "10.1590/1413-8271202530e287636": {
-      "sent_date": "2025-11-07T15:21:30.056840",
-      "title": "Depend\u00eancia emocional: modelo explicativo da personalidade, autoestima e medo de ficar solteiro"
-    },
-    "10.1134/s107570072570056x": {
-      "sent_date": "2025-11-07T15:21:30.056840",
-      "title": "Drivers of Consumer Choice on Marketplaces for the Russian Population: Cost Savings and Product Diversity"
-    },
-    "10.4103/amh.amh_263_24": {
-      "sent_date": "2025-11-07T15:21:30.056840",
-      "title": "Navigating technoference in marital relationships: A qualitative study of digital distractions among married couples in India"
-    },
-    "10.1053/j.jvca.2025.11.006": {
-      "sent_date": "2025-11-08T03:23:13.096170",
-      "title": "Survey Studies \u2013 optimizing this type of cross-sectional observational trial with respect to design, conduct and reporting"
-    },
-    "10.1609/aiide.v21i1.36859": {
-      "sent_date": "2025-11-08T03:23:13.096170",
-      "title": "Design as Language Co-Construction: Toward Responsible, Transparent, and Adaptive AI Support for Educational Game Design"
-    },
     "10.17559/tv-20250103002229": {
       "sent_date": "2025-11-09T03:38:38.652174",
       "title": "Key Factors Influencing E-Commerce Consumer Behavior in China: A Quantitative Perspective"
@@ -627,7 +567,23 @@
     "10.47679/jopp.7412702025": {
       "sent_date": "2025-12-07T03:51:32.784951",
       "title": "Online Gambling Consumer Behavior: Addiction, Social Stigma, Psychological Distress, and Gender Differences"
+    },
+    "10.20944/preprints202512.0539.v1": {
+      "sent_date": "2025-12-08T03:50:27.383133",
+      "title": "Predictive Modeling of Household Credit Risk and Fear of Denial: A High-Dimensional Analysis Using PCA and XGBoost on the 2022 Survey of Consumer Finances (SCF)"
+    },
+    "2512.05747": {
+      "sent_date": "2025-12-08T03:50:27.383133",
+      "title": "Capturing Classic Authorial Style in Long-Form Story Generation with GRPO Fine-Tuning"
+    },
+    "2512.05464": {
+      "sent_date": "2025-12-08T03:50:27.383133",
+      "title": "Dynamic Alignment for Collective Agency: Toward a Scalable Self-Improving Framework for Open-Ended LLM Alignment"
+    },
+    "2512.04868": {
+      "sent_date": "2025-12-08T03:50:27.383133",
+      "title": "SEAL: Self-Evolving Agentic Learning for Conversational Question Answering over Knowledge Graphs"
     }
   },
-  "last_run": "2025-12-07T03:51:32.784951"
+  "last_run": "2025-12-08T03:50:27.383133"
 }
