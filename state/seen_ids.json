@@ -1,17 +1,5 @@
 {
   "papers": {
-    "10.17559/tv-20250103002229": {
-      "sent_date": "2025-11-09T03:38:38.652174",
-      "title": "Key Factors Influencing E-Commerce Consumer Behavior in China: A Quantitative Perspective"
-    },
-    "10.56220/uwjms.v3i1.37": {
-      "sent_date": "2025-11-09T03:38:38.652174",
-      "title": "Green Consumer Behavior: Effects of Demographic Characteristics on Consumer\u2019s Choice of Buying Green Products: An Empirical Study of Swedish Electricity Market"
-    },
-    "10.2139/ssrn.5723661": {
-      "sent_date": "2025-11-09T03:38:38.652174",
-      "title": "MODELING HIERARCHICAL POWER DISTANCE RELATIONSHIP IN GROUP DECISION MAKING DYNAMICS THROUGH AGENT-BASED MODELING"
-    },
     "10.1177/00222437251399115": {
       "sent_date": "2025-11-10T03:45:21.714201",
       "title": "EXPRESS: When \u2018Year\u2019 Feels near: How Year versus Length Framing Alters Time Perception and Consumer Decisions"
@@ -603,7 +591,27 @@
     "10.29402/hn37.2.1": {
       "sent_date": "2025-12-09T03:43:52.150298",
       "title": "Pregnant Women\u2019s Online Information Searching From Motivation to Decision-Making: A Cross-Sectional Study"
+    },
+    "10.59945/jpnm.v3i3.739": {
+      "sent_date": "2025-12-10T03:48:53.585413",
+      "title": "Analisis Sentimen Ulasan Produk untuk Mengukur Kepuasan Pelanggan E-commerce menggunakan metode Natural Language Processing (NLP) dan Support Vector Machine (SVM)"
+    },
+    "2512.08366": {
+      "sent_date": "2025-12-10T03:48:53.585413",
+      "title": "Reflecting with Two Voices: A Co-Adaptive Dual-Strategy Framework for LLM-Based Agent Decision Making"
+    },
+    "10.34074/rere.00503": {
+      "sent_date": "2025-12-10T03:48:53.585413",
+      "title": "Friend, Guide, or Frustration? Understanding Trust in AI Chatbots for Tourism and Hospitality"
+    },
+    "10.20944/preprints202512.0675.v1": {
+      "sent_date": "2025-12-10T03:48:53.585413",
+      "title": "Optimizing Retail Decision-Making Through Big Data and Machine Learning Integration"
+    },
+    "10.21070/ups.8215": {
+      "sent_date": "2025-12-10T03:48:53.585413",
+      "title": "The Influence of Brand Image, Switching Barrier, and Perceived Quality on Customer Loyalty of Telkomsel Users in Sidoarjo"
     }
   },
-  "last_run": "2025-12-09T03:43:52.150298"
+  "last_run": "2025-12-10T03:48:53.585413"
 }
