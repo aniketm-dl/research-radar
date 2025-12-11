@@ -1,33 +1,5 @@
 {
   "papers": {
-    "10.1177/00222437251399115": {
-      "sent_date": "2025-11-10T03:45:21.714201",
-      "title": "EXPRESS: When \u2018Year\u2019 Feels near: How Year versus Length Framing Alters Time Perception and Consumer Decisions"
-    },
-    "10.55606/jurimbik.v5i3.1164": {
-      "sent_date": "2025-11-10T03:45:21.714201",
-      "title": "Modeling Chatgpt Continuance Intention: The Role of Expectancy, Satisfaction, and Trust"
-    },
-    "10.9728/dcs.2025.26.10.2755": {
-      "sent_date": "2025-11-10T03:45:21.714201",
-      "title": "Virtual Influencer Marketing: Limitations and Strategic Evolution and an Empirical Analysis Based on Consumer Perception"
-    },
-    "10.25105/jat.v12i2.23326": {
-      "sent_date": "2025-11-10T03:45:21.714201",
-      "title": "PENGARUH RISK PREFERENCE, ARTICLE PREFERENCE, DAN GENDER TERHADAP INVESTMENT DECISION DENGAN CONFIRMATION BIAS SEBAGAI VARIABEL MEDIASI"
-    },
-    "10.14377/kja.2025.10.31.89": {
-      "sent_date": "2025-11-10T03:45:21.714201",
-      "title": "A Study on Consumer Response Patterns and Emotion-Based Advertising Strategies through Sentiment Analysis of Short-Form Advertising Comments"
-    },
-    "10.34127/jrlab.v14i3.1853": {
-      "sent_date": "2025-11-11T03:40:29.684708",
-      "title": "MEMAHAMI NIAT PENGGUNAAN KEMBALI DOMPET DIGITAL: INTERAKSI ANTARA PENGALAMAN PENGGUNA, E-WOM, DAN DISKON PENJUALAN"
-    },
-    "10.70062/greeneconomics.v2i4.370": {
-      "sent_date": "2025-11-11T03:40:29.684708",
-      "title": "Wizzmie Customer Purchasing Decision Model In Semarang City: Shopping Experience Involvment as a Mediating Variable"
-    },
     "10.35631/jistm.1040028": {
       "sent_date": "2025-11-12T03:38:31.418115",
       "title": "DEVELOPING A MODEL OF MULTI-CRITERIA DECISION MAKING FOR CUSTOMER UNCERTAINTY IN ONLINE PURCHASING (MCDM-UnOP)"
@@ -611,7 +583,23 @@
     "10.21070/ups.8215": {
       "sent_date": "2025-12-10T03:48:53.585413",
       "title": "The Influence of Brand Image, Switching Barrier, and Perceived Quality on Customer Loyalty of Telkomsel Users in Sidoarjo"
+    },
+    "2512.09108": {
+      "sent_date": "2025-12-11T03:52:32.050832",
+      "title": "Evolving Excellence: Automated Optimization of LLM-based Agents"
+    },
+    "10.21070/ups.8031": {
+      "sent_date": "2025-12-11T03:52:32.050832",
+      "title": "Influence of Live Streaming, Content Marketing, Impulse Buying at TikTok  Shop on Purchase Decisions for Ortuseight Shoes"
+    },
+    "10.32832/jurma.v9i2.2753": {
+      "sent_date": "2025-12-11T03:52:32.050832",
+      "title": "The Influence of Distribution Channels, Price, and Brand Image on the Purchase Decision of Goods Delivery Services at PT. Pos Indonesia Kabanjahe Service Unit"
+    },
+    "10.32832/jurma.v9i2.2774": {
+      "sent_date": "2025-12-11T03:52:32.050832",
+      "title": "The Influence of FOMO (Fear of Missing Out), Brand Image, and Self-Actualization Needs on the Purchase Decision of Honda PCX 160 ABS in Bengkulu City"
     }
   },
-  "last_run": "2025-12-10T03:48:53.585413"
+  "last_run": "2025-12-11T03:52:32.050832"
 }
