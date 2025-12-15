@@ -1,41 +1,5 @@
 {
   "papers": {
-    "2511.07338": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas"
-    },
-    "2511.09710": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Echoing: Identity Failures when LLM Agents Talk to Each Other"
-    },
-    "2511.10342": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Regret, Uncertainty, and Bounded Rationality in Norm-Driven Decisions"
-    },
-    "2511.10338": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "BhashaKritika: Building Synthetic Pretraining Data at Scale for Indic Languages"
-    },
-    "2511.10277": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Fixed-Persona SLMs with Modular Memory: Scalable NPC Dialogue on Consumer Hardware"
-    },
-    "2511.10051": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "GraphIF: Enhancing Multi-Turn Instruction Following for Large Language Models with Relation Graph Prompt"
-    },
-    "2511.09381": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Self-Correcting Large Language Models: Generation vs. Multiple Choice"
-    },
-    "2511.09586": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Scaling Environments for LLM Agents in the Era of Learning from Interaction: A Survey"
-    },
-    "2511.09149": {
-      "sent_date": "2025-11-15T03:38:01.033850",
-      "title": "Enabling Agents to Communicate Entirely in Latent Space"
-    },
     "2511.08721": {
       "sent_date": "2025-11-16T03:43:54.990400",
       "title": "Benevolent Dictators? On LLM Agent Behavior in Dictator Games"
