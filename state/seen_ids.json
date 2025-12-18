@@ -1,49 +1,5 @@
 {
   "papers": {
-    "2511.11370": {
-      "sent_date": "2025-11-17T03:44:31.180885",
-      "title": "SRLF: An Agent-Driven Set-Wise Reflective Learning Framework for Sequential Recommendation"
-    },
-    "10.37275/oaijss.v8i2.298": {
-      "sent_date": "2025-11-17T03:44:31.180885",
-      "title": "The \u2018Live\u2019 Gaze: A Neuromarketing and Eye-Tracking Analysis of Consumer Attention and Impulse Buying on Shopee Live and TikTok Shop in Indonesia"
-    },
-    "2511.11551": {
-      "sent_date": "2025-11-17T03:44:31.180885",
-      "title": "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping"
-    },
-    "2511.11306": {
-      "sent_date": "2025-11-17T03:44:31.180885",
-      "title": "iMAD: Intelligent Multi-Agent Debate for Efficient and Accurate LLM Inference"
-    },
-    "2511.10949": {
-      "sent_date": "2025-11-17T03:44:31.180885",
-      "title": "Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting"
-    },
-    "2511.12949": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "Can We Predict the Next Question? A Collaborative Filtering Approach to Modeling User Behavior"
-    },
-    "2511.13233": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "LLM-based Multi-Agent System for Simulating Strategic and Goal-Oriented Data Marketplaces"
-    },
-    "2511.13193": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "Cost-Effective Communication: An Auction-based Method for Language Agent Interaction"
-    },
-    "2511.12359": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "More Than Irrational: Modeling Belief-Biased Agents"
-    },
-    "2511.11793": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling"
-    },
-    "2511.08042": {
-      "sent_date": "2025-11-18T03:40:50.238650",
-      "title": "Towards a Standard, Enterprise-Relevant Agentic AI Benchmark: Lessons from 5.5 billion tokens' worth of agentic AI evaluations"
-    },
     "2511.14650": {
       "sent_date": "2025-11-19T03:40:42.553192",
       "title": "AutoTool: Efficient Tool Selection for Large Language Model Agents"
