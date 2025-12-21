@@ -1,45 +1,5 @@
 {
   "papers": {
-    "2511.15392": {
-      "sent_date": "2025-11-20T03:40:16.980733",
-      "title": "DEPO: Dual-Efficiency Preference Optimization for LLM Agents"
-    },
-    "2511.12319": {
-      "sent_date": "2025-11-20T03:40:16.980733",
-      "title": "Decision and Gender Biases in Large Language Models: A Behavioral Economic Perspective"
-    },
-    "2511.13410": {
-      "sent_date": "2025-11-20T03:40:16.980733",
-      "title": "Mem-PAL: Towards Memory-based Personalized Dialogue Assistants for Long-term User-Agent Interaction"
-    },
-    "2511.13290": {
-      "sent_date": "2025-11-20T03:40:16.980733",
-      "title": "Dropouts in Confidence: Moral Uncertainty in Human-LLM Alignment"
-    },
-    "10.1016/j.jretconser.2025.104622": {
-      "sent_date": "2025-11-20T03:40:16.980733",
-      "title": "Understanding user disengagement in social shopping platform: The roles of fatigue and dependency"
-    },
-    "2511.16248": {
-      "sent_date": "2025-11-21T03:41:27.302210",
-      "title": "Revisiting Fairness-aware Interactive Recommendation: Item Lifecycle as a Control Knob"
-    },
-    "10.1016/j.ijhm.2025.104502": {
-      "sent_date": "2025-11-21T03:41:27.302210",
-      "title": "Platform endorsements as drivers of consumer behavior: A quasi-experimental study using restaurant review data"
-    },
-    "2511.15862": {
-      "sent_date": "2025-11-21T03:41:27.302210",
-      "title": "The Subtle Art of Defection: Understanding Uncooperative Behaviors in LLM based Multi-Agent Systems"
-    },
-    "10.1016/j.ipm.2025.104477": {
-      "sent_date": "2025-11-21T03:41:27.302210",
-      "title": "Transformer-based large language foundation models for text generation: A comprehensive literature review for different languages and application domains"
-    },
-    "2511.15992": {
-      "sent_date": "2025-11-21T03:41:27.302210",
-      "title": "Detecting Sleeper Agents in Large Language Models via Semantic Drift Analysis"
-    },
     "10.63313/ebm.9118": {
       "sent_date": "2025-11-22T03:31:38.862627",
       "title": "A Study on Trust Mechanisms and Communication Effectiveness in Social Media KOL Marketing \u2014\u2014 A Case Study of Rednote"
