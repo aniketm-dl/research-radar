@@ -1,49 +1,5 @@
 {
   "papers": {
-    "10.1007/s44176-025-00054-1": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "Can psychographics mitigate over-specialization in recommender-driven consumer markets? Evidence from recommender systems based simulation experiment"
-    },
-    "2511.17467": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "PersonaAgent with GraphRAG: Community-Aware Knowledge Graphs for Personalized LLM"
-    },
-    "2511.17315": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "Humanlike Multi-user Agent (HUMA): Designing a Deceptively Human AI Facilitator for Group Chats"
-    },
-    "10.55606/jurimea.v5i3.1519": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "Peran Brand Trust pada Pengaruh Online Customer Review dan Perceived Value terhadap Purchase Intention"
-    },
-    "10.1007/s00146-025-02751-7": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "From moral panic to normalization: comparing users and non-users of AI companionship apps"
-    },
-    "2511.16769": {
-      "sent_date": "2025-11-24T03:53:50.429173",
-      "title": "Trust in AI emerges from distrust in humans: A machine learning study on decision-making guidance"
-    },
-    "2511.18413": {
-      "sent_date": "2025-11-25T03:43:44.295256",
-      "title": "Multi-Agent Collaborative Filtering: Orchestrating Users and Items for Agentic Recommendations"
-    },
-    "10.1111/joss.70092": {
-      "sent_date": "2025-11-25T03:43:44.295256",
-      "title": "Innovative Hedonic Testing: The Inherited Preference (\n                    <scp>iPref</scp>\n                    ) Approach in Consumer Sciences"
-    },
-    "10.70062/managementdynamics.v1i1.419": {
-      "sent_date": "2025-11-25T03:43:44.295256",
-      "title": "Social Media Sentiment Analysis as a Predictor of Product Launch Success in the Digital Marketplace"
-    },
-    "2511.19405": {
-      "sent_date": "2025-11-25T03:43:44.295256",
-      "title": "Learning Robust Social Strategies with Large Language Models"
-    },
-    "2511.17959": {
-      "sent_date": "2025-11-25T03:43:44.295256",
-      "title": "Towards Automating Data Access Permissions in AI Agents"
-    },
     "2511.18743": {
       "sent_date": "2025-11-26T03:43:46.472050",
       "title": "RhinoInsight: Improving Deep Research through Control Mechanisms for Model Behavior and Context"
