@@ -1,45 +1,5 @@
 {
   "papers": {
-    "10.61336/jiclt/25-01-108": {
-      "sent_date": "2025-11-27T03:42:21.611298",
-      "title": "Predicting Consumer Decision Making using Deep Learning Models in Digital Marketing"
-    },
-    "2511.20867": {
-      "sent_date": "2025-11-27T03:42:21.611298",
-      "title": "E-GEO: A Testbed for Generative Engine Optimization in E-Commerce"
-    },
-    "2511.21686": {
-      "sent_date": "2025-11-27T03:42:21.611298",
-      "title": "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework"
-    },
-    "2511.21446": {
-      "sent_date": "2025-11-27T03:42:21.611298",
-      "title": "Discrete Choice with Endogenous Peer Selection"
-    },
-    "10.2139/ssrn.5812519": {
-      "sent_date": "2025-11-27T03:42:21.611298",
-      "title": "Large Language Model Enhanced Click-Through Rate Prediction in Large-Scale E-commerce Systems"
-    },
-    "10.1002/arcp.70004": {
-      "sent_date": "2025-11-28T03:38:41.724992",
-      "title": "Digital tracking, gamification, social media, and AI: How technology influences motivation"
-    },
-    "2511.21631": {
-      "sent_date": "2025-11-28T03:38:41.724992",
-      "title": "Qwen3-VL Technical Report"
-    },
-    "2511.20284": {
-      "sent_date": "2025-11-28T03:38:41.724992",
-      "title": "Can LLMs Make (Personalized) Access Control Decisions?"
-    },
-    "2511.19726": {
-      "sent_date": "2025-11-28T03:38:41.724992",
-      "title": "An Adaptive, Data-Integrated Agent-Based Modeling Framework for Explainable and Contestable Policy Design"
-    },
-    "10.1007/s10694-025-01825-8": {
-      "sent_date": "2025-11-28T03:38:41.724992",
-      "title": "Correction: Understanding the Human Behavior in the Kiss Nightclub Fire: Analysis of a Survey with Survivors"
-    },
     "10.1016/j.actpsy.2025.106006": {
       "sent_date": "2025-11-29T03:40:28.731760",
       "title": "From scroll to sale: Predicting of customer engagement in impulse buying cycle on TikTok through the S-O-R model"
