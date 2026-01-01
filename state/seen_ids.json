@@ -1,45 +1,5 @@
 {
   "papers": {
-    "2511.22130": {
-      "sent_date": "2025-12-01T04:10:06.323348",
-      "title": "Benchmarking In-context Experiential Learning Through Repeated Product Recommendations"
-    },
-    "2511.21783": {
-      "sent_date": "2025-12-01T04:10:06.323348",
-      "title": "NetworkGames: Simulating Cooperation in Network Games with Personality-driven LLM Agents"
-    },
-    "10.47153/jbmr.v6i11.1813": {
-      "sent_date": "2025-12-01T04:10:06.323348",
-      "title": "The Role of Artificial Intelligence in Marketing Personalization Digital Era : A Bibliometric Analysis"
-    },
-    "2511.23271": {
-      "sent_date": "2025-12-01T04:10:06.323348",
-      "title": "Behavior-Equivalent Token: Single-Token Replacement for Long Prompts in LLMs"
-    },
-    "2511.23061": {
-      "sent_date": "2025-12-01T04:10:06.323348",
-      "title": "The impact of anticonformity on the diffusion of innovation -- insights from the q-voter model"
-    },
-    "2512.01107": {
-      "sent_date": "2025-12-02T03:48:29.656928",
-      "title": "Foundation Priors"
-    },
-    "2512.00461": {
-      "sent_date": "2025-12-02T03:48:29.656928",
-      "title": "Whose Personae? Synthetic Persona Experiments in LLM Research and Pathways to Transparency"
-    },
-    "2512.00966": {
-      "sent_date": "2025-12-02T03:48:29.656928",
-      "title": "Mitigating Indirect Prompt Injection via Instruction-Following Intent Analysis"
-    },
-    "2511.23397": {
-      "sent_date": "2025-12-02T03:48:29.656928",
-      "title": "MegaChat: A Synthetic Persian Q&A Dataset for High-Quality Sales Chatbot Evaluation"
-    },
-    "2512.01439": {
-      "sent_date": "2025-12-02T03:48:29.656928",
-      "title": "Multilingual Conversational AI for Financial Assistance: Bridging Language Barriers in Indian FinTech"
-    },
     "2512.02543": {
       "sent_date": "2025-12-03T03:47:01.097361",
       "title": "In-Context Distillation with Self-Consistency Cascades: A Simple, Training-Free Way to Reduce LLM Agent Costs"
