@@ -1,45 +1,5 @@
 {
   "papers": {
-    "2512.03238": {
-      "sent_date": "2025-12-04T03:48:20.971419",
-      "title": "How to DP-fy Your Data: A Practical Guide to Generating Synthetic Data With Differential Privacy"
-    },
-    "2512.03931": {
-      "sent_date": "2025-12-04T03:48:20.971419",
-      "title": "Autonomous Agents and Policy Compliance: A Framework for Reasoning About Penalties"
-    },
-    "2512.02358": {
-      "sent_date": "2025-12-04T03:48:20.971419",
-      "title": "Beyond Playtesting: A Generative Multi-Agent Simulation System for Massively Multiplayer Online Games"
-    },
-    "10.9708/jksci.2025.30.11.329": {
-      "sent_date": "2025-12-04T03:48:20.971419",
-      "title": "Understanding Young Users\u2019 Continued Use of AI Chatbots for Mental Health: A TAM and PSI Perspective"
-    },
-    "2512.03607": {
-      "sent_date": "2025-12-04T03:48:20.971419",
-      "title": "DeepRule: An Integrated Framework for Automated Business Rule Generation via Deep Predictive Modeling and Hybrid Search Optimization"
-    },
-    "10.58812/wsjee.v3i04.2469": {
-      "sent_date": "2025-12-05T03:47:13.017862",
-      "title": "Trends and Evolution of Neuromarketing Research in Understanding Consumer Behavior: A Bibliometric Analysis"
-    },
-    "2512.05065": {
-      "sent_date": "2025-12-05T03:47:13.017862",
-      "title": "Personalizing Agent Privacy Decisions via Logical Entailment"
-    },
-    "2512.04864": {
-      "sent_date": "2025-12-05T03:47:13.017862",
-      "title": "Are Your Agents Upward Deceivers?"
-    },
-    "2512.04771": {
-      "sent_date": "2025-12-05T03:47:13.017862",
-      "title": "Complementary Characterization of Agent-Based Models via Computational Mechanics and Diffusion Models"
-    },
-    "2512.04408": {
-      "sent_date": "2025-12-05T03:47:13.017862",
-      "title": "Executable Governance for AI: Translating Policies into Rules Using LLMs"
-    },
     "2512.05013": {
       "sent_date": "2025-12-06T03:40:20.273003",
       "title": "Detecting Perspective Shifts in Multi-agent Systems"
