@@ -1,41 +1,5 @@
 {
   "papers": {
-    "10.20944/preprints202512.0539.v1": {
-      "sent_date": "2025-12-08T03:50:27.383133",
-      "title": "Predictive Modeling of Household Credit Risk and Fear of Denial: A High-Dimensional Analysis Using PCA and XGBoost on the 2022 Survey of Consumer Finances (SCF)"
-    },
-    "2512.05747": {
-      "sent_date": "2025-12-08T03:50:27.383133",
-      "title": "Capturing Classic Authorial Style in Long-Form Story Generation with GRPO Fine-Tuning"
-    },
-    "2512.05464": {
-      "sent_date": "2025-12-08T03:50:27.383133",
-      "title": "Dynamic Alignment for Collective Agency: Toward a Scalable Self-Improving Framework for Open-Ended LLM Alignment"
-    },
-    "2512.04868": {
-      "sent_date": "2025-12-08T03:50:27.383133",
-      "title": "SEAL: Self-Evolving Agentic Learning for Conversational Question Answering over Knowledge Graphs"
-    },
-    "2512.06590": {
-      "sent_date": "2025-12-09T03:43:52.150298",
-      "title": "Towards Efficient Hypergraph and Multi-LLM Agent Recommender Systems"
-    },
-    "10.55606/bijmt.v5i3.6007": {
-      "sent_date": "2025-12-09T03:43:52.150298",
-      "title": "The Influence of Viral Marketing, Influencer Marketing, and Consumer Reviews on Purchase Decisions for La Roche-Posay Products: A Study of La Roche-Posay Users in Tulungagung"
-    },
-    "10.18178/ijiet.2025.15.12.2459": {
-      "sent_date": "2025-12-09T03:43:52.150298",
-      "title": "The Perspectives of Undergraduate Students on the Effects of Generative AI on Academic Achievement"
-    },
-    "2512.06914": {
-      "sent_date": "2025-12-09T03:43:52.150298",
-      "title": "SoK: Trust-Authorization Mismatch in LLM Agent Interactions"
-    },
-    "10.29402/hn37.2.1": {
-      "sent_date": "2025-12-09T03:43:52.150298",
-      "title": "Pregnant Women\u2019s Online Information Searching From Motivation to Decision-Making: A Cross-Sectional Study"
-    },
     "10.59945/jpnm.v3i3.739": {
       "sent_date": "2025-12-10T03:48:53.585413",
       "title": "Analisis Sentimen Ulasan Produk untuk Mengukur Kepuasan Pelanggan E-commerce menggunakan metode Natural Language Processing (NLP) dan Support Vector Machine (SVM)"
