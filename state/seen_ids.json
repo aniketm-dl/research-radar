@@ -1,25 +1,5 @@
 {
   "papers": {
-    "10.59945/jpnm.v3i3.739": {
-      "sent_date": "2025-12-10T03:48:53.585413",
-      "title": "Analisis Sentimen Ulasan Produk untuk Mengukur Kepuasan Pelanggan E-commerce menggunakan metode Natural Language Processing (NLP) dan Support Vector Machine (SVM)"
-    },
-    "2512.08366": {
-      "sent_date": "2025-12-10T03:48:53.585413",
-      "title": "Reflecting with Two Voices: A Co-Adaptive Dual-Strategy Framework for LLM-Based Agent Decision Making"
-    },
-    "10.34074/rere.00503": {
-      "sent_date": "2025-12-10T03:48:53.585413",
-      "title": "Friend, Guide, or Frustration? Understanding Trust in AI Chatbots for Tourism and Hospitality"
-    },
-    "10.20944/preprints202512.0675.v1": {
-      "sent_date": "2025-12-10T03:48:53.585413",
-      "title": "Optimizing Retail Decision-Making Through Big Data and Machine Learning Integration"
-    },
-    "10.21070/ups.8215": {
-      "sent_date": "2025-12-10T03:48:53.585413",
-      "title": "The Influence of Brand Image, Switching Barrier, and Perceived Quality on Customer Loyalty of Telkomsel Users in Sidoarjo"
-    },
     "2512.09108": {
       "sent_date": "2025-12-11T03:52:32.050832",
       "title": "Evolving Excellence: Automated Optimization of LLM-based Agents"
