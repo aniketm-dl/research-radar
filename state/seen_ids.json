@@ -1,17 +1,4 @@
 {
-  "papers": {
-    "10.1016/j.teler.2025.100285": {
-      "sent_date": "2025-12-14T03:54:47.544064",
-      "title": "Trust at risk: Detecting misinformation in LLM-generated product reviews and its implications for consumer behavior and platform governance"
-    },
-    "10.1080/02673843.2025.2601474": {
-      "sent_date": "2025-12-14T03:54:47.544064",
-      "title": "The visual style of food marketing: TikTok and the teen audience"
-    },
-    "10.31949/jumash.v2i1.14176": {
-      "sent_date": "2025-12-14T03:54:47.544064",
-      "title": "Strategi Komunikasi Pemasaran Digital di Instagram Pada Akun @niskala_coffee"
-    }
-  },
+  "papers": {},
   "last_run": "2025-12-14T03:54:47.544064"
 }
